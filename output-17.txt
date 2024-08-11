@@ -1,0 +1,37 @@
+Name:                   flask-app
+Namespace:              practice-xotam
+CreationTimestamp:      Sun, 11 Aug 2024 14:13:49 +0500
+Labels:                 app=flask-app
+Annotations:            deployment.kubernetes.io/revision: 2
+Selector:               app=flask-app
+Replicas:               1 desired | 1 updated | 1 total | 1 available | 0 unavailable
+StrategyType:           RollingUpdate
+MinReadySeconds:        0
+RollingUpdateStrategy:  25% max unavailable, 25% max surge
+Pod Template:
+  Labels:  app=flask-app
+  Containers:
+   flask-app:
+    Image:      nvrbckdown/flask-app:v1
+    Port:       5000/TCP
+    Host Port:  0/TCP
+    Environment Variables from:
+      configmap-demo  ConfigMap  Optional: false
+      secrets-demo    Secret     Optional: false
+    Environment:      <none>
+    Mounts:           <none>
+  Volumes:            <none>
+  Node-Selectors:     <none>
+  Tolerations:        <none>
+Conditions:
+  Type           Status  Reason
+  ----           ------  ------
+  Available      True    MinimumReplicasAvailable
+  Progressing    True    NewReplicaSetAvailable
+OldReplicaSets:  flask-app-6b9b47b79 (0/0 replicas created)
+NewReplicaSet:   flask-app-6f48c779bc (1/1 replicas created)
+Events:
+  Type    Reason             Age   From                   Message
+  ----    ------             ----  ----                   -------
+  Normal  ScalingReplicaSet  52s   deployment-controller  Scaled up replica set flask-app-6f48c779bc to 1
+  Normal  ScalingReplicaSet  50s   deployment-controller  Scaled down replica set flask-app-6b9b47b79 to 0 from 1

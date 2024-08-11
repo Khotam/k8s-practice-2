@@ -1,0 +1,1 @@
+{"domain":"xbaxromov.nvrbckdown.uz","endpoint":"/check-ingress","full_path:":"xbaxromov.nvrbckdown.uz/check-ingress"}

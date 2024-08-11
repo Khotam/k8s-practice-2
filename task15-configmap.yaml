@@ -1,0 +1,9 @@
+apiVersion: v1
+data:
+  config.txt: |
+    AUTHOR=xotam
+    ENV=PRODUCTION
+    HTTP_PORT=80
+kind: ConfigMap
+metadata:
+  name: configmap-demo

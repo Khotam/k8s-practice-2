@@ -1,0 +1,6 @@
+NAMESPACE             NAME                                READY   STATUS    RESTARTS   AGE
+practice-abdulqodir   nginx-named-port-74c5f6cf94-9mxwg   1/1     Running   0          42h
+practice-xotam        nginx-deploy-7d778487cd-c6rxj       1/1     Running   0          39s
+practice-xotam        nginx-deploy-7d778487cd-hp8wt       1/1     Running   0          40s
+practice-xotam        nginx-deploy-7d778487cd-n5ch4       1/1     Running   0          40s
+practice-xotam        nginx-deploy-7d778487cd-xz5cj       1/1     Running   0          38s
